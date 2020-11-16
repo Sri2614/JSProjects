@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Crash Course</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- <h1 id="someText"></h1> -->
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flex-box-container-1">
+   
+          <div>
+            <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+          </div>
+          <div>
+            <button class="btn btn-danger" onclick="reset()">Reset</button>
+          </div>
+        </div>
+        <div class="flex-box-container-1">
+          <div id="flexbox-result">
+
+          </div>
+        </div>
+    </div>
+
+    <div class="container-2">
+      <h2>Challenge 2: Cat Generator</h2>
+      <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+      <div class="flex-box-container-2" id="flex-cat-gen"> 
+        <!-- <img src="http://thecatapi.com/api/images/get?format=src&type=gif&size=small" alt=""> -->
+        
+      </div>
+    </div>
+
+    <div class="container-3">
+      <h2>Challenge 3: Rock, Paper, Scissors</h2>
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img id="rock" src="http://images.clipartpanda.com/rock-clipart-clipart-harvestable-resources-rock.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+        <img id="paper" src="http://images.clipartpanda.com/paper-clipart-nexxuz-Loose-Leaf-Paper.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+        <img id="scissors" src="https://thumbs.dreamstime.com/b/female-hand-sign-victory-sign-peace-sign-scissors-vector-color-flat-illustration-isolated-white-background-web-83128345.jpg" height=150 width=150 alt="" onclick="rpsGame(this)">
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
